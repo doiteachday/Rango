@@ -1,2 +1,2 @@
 # Rango
-0 to 1 website
+use django built a site from 0 to 1
