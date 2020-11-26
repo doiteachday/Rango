@@ -1,0 +1,25 @@
+	{% extends 'rango/base.html' %}
+	{% load staticfiles %} <!-- New line -->
+	{% block title_block %}
+		About
+	{% endblock %}
+
+	{% block body_block %}
+		<button class="btn btn-primary" onClick="alert('you clicked the button using javascript.');">
+			Click and run javascript.
+		</button>
+		<button class="btn btn-primary" id="about-btn">
+			click me - jquery js on speed.
+		</button>
+		<p>example 1</p>
+		<p>example 2</p>
+		<h1>Put this tutorial together.</h1>
+		<p> visits: {{ visits }} </p>
+		<div>
+			<img src="{% static "images/vi.png" %}" 
+		             alt="Picture of vim-use" /> <!-- new line -->
+			<img src="{{ MEDIA_URL }}learn.png" 
+		             alt="Picture of learn.png" /> <!-- new line -->
+
+		</div>
+	{% endblock %}
